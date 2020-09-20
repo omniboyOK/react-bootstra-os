@@ -1,0 +1,12 @@
+{
+    "files": {
+        "image": {
+            "name": "picture",
+            "type": "jpg"
+        },
+        "text": {
+            "name": "sometext",
+            "type": "md"
+        }
+    }
+}
