@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useContext } from "react";
 //import logo from './logo.svg';
-import './App.css';
-import Desktop from './App/Desktop/desktop';
-import Toolbar from './App/Desktop/Toolbar/toolbar';
+import "./App.css";
+import Desktop from "./App/Desktop/desktop";
 
 function App() {
+  /* const [windows, setWindows] = useContext([]); */
+  
   return (
-    <div className="App" style={{height: '100vh'}}>
-      <Desktop toolbar={Toolbar}></Desktop>
+    <div className="App" style={{ height: "100vh" }} onContextMenu={(e) => {e.preventDefault()}}>
+      <Desktop></Desktop>
     </div>
   );
 }
