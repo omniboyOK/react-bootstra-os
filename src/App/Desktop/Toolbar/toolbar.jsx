@@ -4,12 +4,11 @@ import ToolbarClock from "./clock";
 
 function DesktopToolbar(props) {
   return (
-    <Container className="bg-secondary">
+    <Container fluid className="DesktopToolbar bg-dark">
       <Row>
         <Col xs lg="2"></Col>
         <Col></Col>
-        <Col xs lg="2">
-          <div style={{borderLeft: '1px solid black'}}></div>
+        <Col xs lg="1">
           <ToolbarClock/>
         </Col>
       </Row>

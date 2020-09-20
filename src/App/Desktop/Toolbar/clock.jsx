@@ -11,14 +11,7 @@ function ToolbarClock() {
     };
   }, []);
 
-  return (
-    <div>
-      <p>Current time:</p>
-      <div>
-        <p>{value}</p>
-      </div>
-    </div>
-  );
+  return <p className="text-white">{value.toLocaleString()}</p>;
 }
 
 export default ToolbarClock;
