@@ -16,7 +16,7 @@
   width: 100vw;
   bottom: 0;
   height: 3em;
-  opacity: 75%;
+  opacity: 0.75;
 }
 
 .DesktopShortcut {
@@ -40,5 +40,4 @@
 .DesktopIcon {
   height: 3em;
   width: 3em;
-  opacity: 1;
 }
