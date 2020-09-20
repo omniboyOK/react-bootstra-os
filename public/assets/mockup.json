@@ -1,12 +1,14 @@
 {
-    "files": {
-        "image": {
+    "files": [
+        {
             "name": "picture",
-            "type": "jpg"
+            "type": "image",
+            "ext": "jpg"
         },
-        "text": {
-            "name": "sometext",
-            "type": "md"
+        {
+            "name": "text",
+            "type": "text",
+            "ext": "md"
         }
-    }
+    ]
 }
