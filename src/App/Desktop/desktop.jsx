@@ -13,7 +13,7 @@ function Desktop(props) {
           return response.json();
         })
         .then((data) => {
-          setShortcuts([data.files]);
+          setShortcuts(data.files);
         })
         .catch((err) => console.log(err));
     };

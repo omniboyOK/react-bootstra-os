@@ -19,13 +19,8 @@
   opacity: 0.75;
 }
 
-.DesktopShortcut {
-  background-color: rgb(0, 0, 0, 0.4);
-  height: 6em;
-  width: 6em;
-  overflow: hidden;
-  padding: 0.5em 0.5em 0em 0.5em;
-  border-radius: 1em;
+.DesktopShortcut:hover {
+  background-color: rgb(255, 255, 255, 0.2);
 }
 
 .DesktopStart {
@@ -40,4 +35,8 @@
 .DesktopIcon {
   height: 3em;
   width: 3em;
+}
+
+.shadow {
+  text-shadow: 1em;
 }
