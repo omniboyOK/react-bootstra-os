@@ -1,20 +1,20 @@
 import React from "react";
-import { FaRegFileAlt, FaRegFileImage, FaRegFile } from "react-icons/fa";
+import { FiFileText, FiImage, FiFile } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const icon = (type) => {
   switch (type) {
     case "image":
       return (
-        <FaRegFileImage className="DesktopIcon text-white bg-dark rounded p-1" />
+        <FiImage className="DesktopIcon text-white bg-dark rounded p-1" />
       );
     case "text":
       return (
-        <FaRegFileAlt className="DesktopIcon text-white bg-dark rounded p-1" />
+        <FiFileText className="DesktopIcon text-white bg-dark rounded p-1" />
       );
     default:
       return (
-        <FaRegFile className="DesktopIcon text-white bg-dark rounded p-1" />
+        <FiFile className="DesktopIcon text-white bg-dark rounded p-1" />
       );
   }
 };
