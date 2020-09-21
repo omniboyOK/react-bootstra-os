@@ -1,3 +1,4 @@
+/* -- Desktop -- */
 .Desktop {
   height: 100vh;
   width: 100vw;
@@ -6,17 +7,30 @@
   background-size: cover;
 }
 
+/* -- Desktop Content -- */
+
 .DesktopContent {
   padding: 2em;
   height: 100vh;
 }
+
+.DesktopIcon {
+  height: 3em;
+  width: 3em;
+}
+
+.shadow {
+  text-shadow: 1em;
+}
+
+/* -- Desktop Toolbar -- */
 
 .DesktopToolbar {
   position: fixed;
   width: 100vw;
   bottom: 0;
   height: 3em;
-  opacity: 0.75;
+  opacity: 0.95;
 }
 
 .DesktopShortcut:hover {
@@ -32,11 +46,4 @@
   background-color: rgb(255, 255, 255, 0.2);
 }
 
-.DesktopIcon {
-  height: 3em;
-  width: 3em;
-}
-
-.shadow {
-  text-shadow: 1em;
-}
+/* -- Window -- */
