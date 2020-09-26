@@ -10,6 +10,6 @@ function MainWindow(props) {
 }
 
 MainWindow.defaultProps = {
-    toolbar: <div></div>,
-    content: <div></div>
+    toolbar: '',
+    content: ''
 }

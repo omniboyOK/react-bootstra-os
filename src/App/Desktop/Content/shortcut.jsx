@@ -16,9 +16,28 @@ const icon = (type) => {
 };
 function DesktopIcon(props) {
   const { name, extension, type } = props;
+
+  const handleAction = e => {
+    switch(type){
+      case 'image':
+        openImage()
+        break;
+      default:
+        openError('File Error', 'Could not recognize the file type')
+    }
+  }
+
+  const openImage = () => {
+    alert('You opened ' + name);
+  }
+
+  const openError = (title, message) => {
+    alert(title + '\n' + message)
+  }
+
   return (
     <motion.div drag dragMomentum={false}>
-      <div className="DesktopShortcut text-center m-1 shadow">
+      <div className="DesktopShortcut text-center m-1 shadow" onDoubleClick={e => handleAction(e)}>
         {icon(type)}
         <p>
           {name}.{extension}
