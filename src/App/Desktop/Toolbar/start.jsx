@@ -5,9 +5,9 @@ import { Button } from "react-bootstrap";
 
 function ToolbarStart(props) {
   return (
-    <Button as="div" className="DesktopStart p-0 rounded-0 btn-outline" variant="link">
+    <Button as="div" className="DesktopStart p-2 rounded-0 btn-outline" variant="link">
       <motion.div whileHover={{ rotate: 45 }}>
-        <FaReact color="white" size="3em" />
+        <FaReact color="white" size="2em" />
       </motion.div>
     </Button>
   );
