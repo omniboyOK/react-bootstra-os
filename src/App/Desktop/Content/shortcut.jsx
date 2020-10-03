@@ -36,11 +36,11 @@ function DesktopIcon(props) {
   return (
     <motion.div drag dragMomentum={false}>
       <div
-        className="DesktopShortcut flex flex-col m-1 rounded"
+        className="DesktopShortcut flex flex-col m-1 hover:bg-gray-600 hover:bg-opacity-25 rounded"
         onDoubleClick={(e) => handleAction(e)}
       >
-        <div className="text-white text-center p-1 m-auto rounded bg-primary">{icon(type)}</div>
-        <div className="text-white text-center hover:bg-black-500">
+        <div className="text-white text-center p-1 m-auto rounded bg-blue-600">{icon(type)}</div>
+        <div className="text-white text-center m-1 ">
             {name}.{extension}
         </div>
       </div>
