@@ -16,7 +16,9 @@ function ToolbarStart(props) {
       }
     >
       <Dropdown.Header>Main</Dropdown.Header>
-      <Dropdown.Item>🛒 Store</Dropdown.Item>
+      <Dropdown.Item>
+        <span role="img" aria-label="store item">🛒</span> Store
+      </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Header>Apps</Dropdown.Header>
       <Apps />

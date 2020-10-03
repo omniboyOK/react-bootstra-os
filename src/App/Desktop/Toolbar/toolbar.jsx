@@ -1,12 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ToolbarMenu from "./apps";
 import ToolbarClock from "./clock";
 import ToolbarStart from "./start";
 
 function DesktopToolbar(props) {
-  const [menu, setMenu] = useState(false);
 
   return (
     <Container fluid className="DesktopToolbar bg-dark">

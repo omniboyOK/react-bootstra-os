@@ -1,10 +1,5 @@
 import React from "react";
-import { Card, Dropdown } from "react-bootstrap";
-
-const variants = {
-  open: { opacity: 1, x: 0 },
-  closed: { opacity: 0, x: "100%" },
-};
+import { Dropdown } from "react-bootstrap";
 
 function ToolbarMenu(props) {
   const apps = [];
