@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import DesktopToolbar from "./Toolbar/toolbar";
 import DesktopContent from "./Content/content";
-import config from "./config";
+import config from "../@bootOS/layout/LayoutConfig";
 
 function Desktop(props) {
   const [shortcuts, setShortcuts] = useState([]);
