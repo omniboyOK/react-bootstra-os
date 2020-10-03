@@ -33,17 +33,9 @@
   opacity: 0.95;
 }
 
-.DesktopShortcut:hover {
-  background-color: rgb(255, 255, 255, 0.2);
-}
-
 .DesktopStart {
   height: 100%;
   width: 3em;
-}
-
-.DesktopStart:hover {
-  background-color: rgb(255, 255, 255, 0.2);
 }
 
 /* -- Window -- */

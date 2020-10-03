@@ -5,43 +5,44 @@ import { motion } from "framer-motion";
 const icon = (type) => {
   switch (type) {
     case "image":
-      return <FiImage className="DesktopIcon p-1" />;
+      return <FiImage className="DesktopIcon" />;
     case "text":
-      return (
-        <FiFileText className="DesktopIcon p-1" />
-      );
+      return <FiFileText className="DesktopIcon" />;
     default:
-      return <FiFile className="DesktopIcon p-1" />;
+      return <FiFile className="DesktopIcon" />;
   }
 };
 function DesktopIcon(props) {
   const { name, extension, type } = props;
 
-  const handleAction = e => {
-    switch(type){
-      case 'image':
-        openImage()
+  const handleAction = (e) => {
+    switch (type) {
+      case "image":
+        openImage();
         break;
       default:
-        openError('File Error', 'Could not recognize the file type')
+        openError("File Error", "Could not recognize the file type");
     }
-  }
+  };
 
   const openImage = () => {
-    alert('You opened ' + name);
-  }
+    alert("You opened " + name);
+  };
 
   const openError = (title, message) => {
-    alert(title + '\n' + message)
-  }
+    alert(title + "\n" + message);
+  };
 
   return (
     <motion.div drag dragMomentum={false}>
-      <div className="DesktopShortcut text-center m-1 shadow" onDoubleClick={e => handleAction(e)}>
-        {icon(type)}
-        <p>
-          {name}.{extension}
-        </p>
+      <div
+        className="DesktopShortcut flex flex-col m-1 rounded"
+        onDoubleClick={(e) => handleAction(e)}
+      >
+        <div className="text-white text-center p-1 m-auto rounded bg-primary">{icon(type)}</div>
+        <div className="text-white text-center hover:bg-black-500">
+            {name}.{extension}
+        </div>
       </div>
     </motion.div>
   );
