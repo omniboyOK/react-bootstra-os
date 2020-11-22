@@ -24,7 +24,17 @@ function DesktopIcon(props) {
   };
 
   return (
-    <motion.div drag dragMomentum={false}>
+    <motion.div
+      initial={{ scale: 0 }}
+      animate={{ rotate: 360, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
+      drag
+      dragMomentum={false}
+    >
       <div
         className="DesktopShortcut flex flex-col m-1 hover:bg-gray-600 hover:bg-opacity-25 rounded overflow-hidden hover:overflow-visible"
         onDoubleClick={(e) => handleAction(e)}
