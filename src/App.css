@@ -9,6 +9,10 @@
 
 /* -- Desktop Content -- */
 
+.DesktopShortcut {
+  width: 4em;
+}
+
 .DesktopContent {
   padding: 2em;
   height: 100vh;

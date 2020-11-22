@@ -1,6 +1,7 @@
 import React from "react";
 import { FiFileText, FiImage, FiFile } from "react-icons/fi";
 import { motion } from "framer-motion";
+import IconUtil from "../../@bootOS/utils/IconUtil";
 
 const icon = (type) => {
   switch (type) {
@@ -36,12 +37,16 @@ function DesktopIcon(props) {
   return (
     <motion.div drag dragMomentum={false}>
       <div
-        className="DesktopShortcut flex flex-col m-1 hover:bg-gray-600 hover:bg-opacity-25 rounded"
+        className="DesktopShortcut flex flex-col m-1 hover:bg-gray-600 hover:bg-opacity-25 rounded overflow-hidden hover:overflow-visible"
         onDoubleClick={(e) => handleAction(e)}
       >
-        <div className="text-white text-center p-1 m-auto rounded bg-blue-600">{icon(type)}</div>
+        <img
+          src={IconUtil.formatToIcon(extension)}
+          alt="desktop icon"
+          className="text-white text-center p-1 m-auto rounded"
+        />
         <div className="text-white text-center m-1 ">
-            {name}.{extension}
+          {name}.{extension}
         </div>
       </div>
     </motion.div>

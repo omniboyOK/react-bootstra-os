@@ -4,7 +4,6 @@ import DesktopIcon from "./shortcut";
 
 function DesktopContent(props) {
   const { shortcuts } = props;
-  console.log(shortcuts)
   return (
     <Container className="DesktopContent" fluid>
       <Row>
