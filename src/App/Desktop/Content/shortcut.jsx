@@ -1,18 +1,7 @@
 import React from "react";
-import { FiFileText, FiImage, FiFile } from "react-icons/fi";
 import { motion } from "framer-motion";
 import IconUtil from "../../@bootOS/utils/IconUtil";
 
-const icon = (type) => {
-  switch (type) {
-    case "image":
-      return <FiImage className="DesktopIcon" />;
-    case "text":
-      return <FiFileText className="DesktopIcon" />;
-    default:
-      return <FiFile className="DesktopIcon" />;
-  }
-};
 function DesktopIcon(props) {
   const { name, extension, type } = props;
 
@@ -41,6 +30,7 @@ function DesktopIcon(props) {
         onDoubleClick={(e) => handleAction(e)}
       >
         <img
+          draggable="false"
           src={IconUtil.formatToIcon(extension)}
           alt="desktop icon"
           className="text-white text-center p-1 m-auto rounded"
