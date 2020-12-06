@@ -13,3 +13,5 @@ MainWindow.defaultProps = {
     toolbar: '',
     content: ''
 }
+
+export default MainWindow;
